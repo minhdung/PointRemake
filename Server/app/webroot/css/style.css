@@ -1,0 +1,31 @@
+/*HEADER*/
+#header{
+    
+}
+#header h2 a{
+    display: block;
+    text-indent: -999999px;
+    background: url('../img/logo.png') no-repeat;
+    width: 214px;
+    height: 77px;
+    float: left;
+    /*margin-bottom: 40px;*/
+}
+#search{
+    float: right;
+}
+nav {
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+}
+nav li.last{
+    float: right;
+    font-size: 15px;
+}
+/*END HEADER*/
+
+/*SHOP*/

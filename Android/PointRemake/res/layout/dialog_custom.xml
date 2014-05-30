@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/paddingBottomDialog" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_pop_title" >
+
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_pop"
+            android:textSize="@dimen/thanks_text_size"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/popup_image"
+        android:layout_width="@dimen/popup_image_width"
+        android:layout_height="@dimen/popup_image_height"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTopImagePopup"
+        android:contentDescription="@string/present_image_description"
+        android:src="@drawable/gift03" />
+
+    <TextView
+        android:id="@+id/present_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_image"
+        android:textSize="@dimen/header_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_textView"
+        android:layout_marginLeft="@dimen/marginLeftRightTextPopup"
+        android:layout_marginRight="@dimen/marginLeftRightTextPopup"
+        android:layout_marginTop="@dimen/margin_top_present_description"
+        android:text="@string/present_description" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/present_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginBottomDialog"
+        android:background="@drawable/roundbox"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_marginLeft="@dimen/ok_margin_left"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ok_button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

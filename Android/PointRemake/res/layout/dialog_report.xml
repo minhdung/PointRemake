@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/paddingBottomDialog" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="@dimen/padding_pop_title" >
+
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_thanks"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/thanks_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/report_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/present_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_textView"
+            android:layout_marginLeft="@dimen/marginLeftRightTextPopup"
+            android:layout_marginTop="@dimen/margin_top_present_description"
+            android:textSize="@dimen/normal_text_size"
+            android:text="@string/report_description" />
+
+        <TextView
+            android:id="@+id/report_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_textView"
+            android:layout_marginTop="@dimen/margin_top_present_description"
+            android:textSize="@dimen/point_number_text_size" />
+
+        <TextView
+            android:id="@+id/report_point1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_textView"
+            android:layout_marginTop="@dimen/margin_top_present_description"
+            android:text="@string/report_point"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/present_description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_textView"
+        android:layout_marginLeft="@dimen/marginLeftRightTextPopup"
+        android:layout_marginRight="@dimen/marginLeftRightTextPopup"
+        android:text="@string/report_description1"
+        android:textSize="@dimen/header_text_size" />
+
+    <LinearLayout
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/present_description1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginBottomDialog"
+        android:background="@drawable/roundbox"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ok_margin_left"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ok_button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

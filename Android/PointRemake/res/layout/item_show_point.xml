@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridlayout_item"
+    android:layout_width="@dimen/item_size"
+    android:layout_height="@dimen/item_size"
+    android:layout_margin="@dimen/margin_item_gridlayout"
+    android:background="@color/holo_orange_dark"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/cell_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/number_size" />
+
+    <ImageView
+        android:id="@+id/imgvCupId"
+        android:layout_width="@dimen/imgvCupId_width"
+        android:layout_height="@dimen/imgvCupId_height"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/imgvPresentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

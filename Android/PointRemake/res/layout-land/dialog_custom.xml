@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/paddingBottomDialog">
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/black"
+	    android:id="@+id/title_layout"
+	    android:gravity="center">
+	    <TextView 
+	        android:id="@+id/popup_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title_pop"
+	        android:padding="@dimen/padding_pop_title"
+	        android:textColor="@android:color/white"
+	        android:textStyle="bold"
+	        />
+	</RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="@dimen/marginTopImagePopup"
+        android:id="@+id/popup_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/present_image_description"
+        android:src="@drawable/icon_6m_192" />
+
+    <TextView
+        android:id="@+id/present_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_image"
+        android:layout_marginTop="@dimen/margin_top_present_description"
+        android:layout_centerHorizontal="true"
+        android:text="@string/present_description"
+        android:layout_marginLeft="@dimen/marginLeftRightTextPopup"
+        android:layout_marginRight="@dimen/marginLeftRightTextPopup"
+        android:layout_marginBottom="@dimen/margin_top_textView" />
+    <Button 
+        android:id="@+id/ok_button"
+        android:layout_width="@dimen/ok_button_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/present_description"
+        android:background="@android:color/darker_gray"
+        android:text="@string/ok"
+        android:layout_marginBottom="@dimen/marginBottomDialog"/>
+
+</RelativeLayout>

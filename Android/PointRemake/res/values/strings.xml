@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ポイントリメイク</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="screen_1_textView">カードをかざしてください</string>
+    <string name="screen_2_textView"> スタンプを押してください</string>
+    <string name="touch_image_description">ここにタッチ</string>
+    <string name="title_activity_show_point">ShowPoint</string>
+    <string name="logo_description">Systena corporation</string>
+    <string name="submitText">ポイント確定</string>
+    <string name="present_image_description">プレゼント</string>
+    <string name="present_description">プレゼント</string>
+    <string name="report_description">次の景品まであと</string>
+    <string name="report_point"> pt</string>
+    <string name="report_description1">またのご利用をお待ちしています</string>
+    <string name="report_description2">お待ちしています</string>
+    <string name="ok">OK</string>
+    <string name="title_pop">おめでとうございます！</string>
+    <string name="title_thanks">ありがとうございます！</string>
+    <string name="cell_content">5</string>
+    <string name="label1">会員No.</string>
+	<string name="card_id">12345678</string>
+	<string name="submit_button"></string>
+	<string name="point_number_text">+6</string>
+	<string name="pt">pt</string>
+</resources>
